@@ -1,0 +1,120 @@
+<body>
+<div class="full-screen-slider">
+  <!-- Put the list of images you want to slide in full screen here.
+   The image which has the class 'active' will be the starting slide.
+   -->
+  <%= image_tag("coconut.jpg", :alt => "coconut", :class => "active") %>
+  <%= image_tag("nice.jpg", :alt => "Nice") %>
+  <%= image_tag("sofa-cover.jpg", :alt => "Sofa-cover") %>
+  <%= image_tag("bar-lights.jpg", :alt => "Bar-lights") %>
+</div>
+<div class="container">
+  <div class="widget transparent lighting-border rounded-corner">
+    <h1 class="brand align-center">
+      <i class="icon-cogs"></i> aesoft
+    </h1>
+    <h2 class="description">
+      Právě vytváříme nové webové stránky projektu aesoft. Projekt aesoft je kódován v technologii Ruby on Rails
+      a jeho hlavním cílem je šířit právě framework rails do českého povědomí. Chcete být informován/a až bude
+      aesoft spuštěn? Zanechte nám váš email.
+    </h2>
+    <!-- Below div will be transformed as counter -->
+    <div class="timer">
+    </div>
+    <div class="clearfix"></div>
+  </div>
+
+
+  <form class="form-search subscribe-container" id="email_form" action="/create" method="post" data-remote="true">
+    <div class="input-append">
+      <input type="email" name="email" class="subscribe-box" placeholder="Váš email" required>
+      <button type="submit" class="btn btn-success subscribe-btn">Uložit</button>
+    </div>
+  </form>
+
+  <!-- Button to trigger modal -->
+  <div class="modal-btn">
+    <button type="button" class="btn-primary btn-large btn-center" data-toggle="modal" data-target="#myModal">Proč by mě měl aesoft zajímat?</button>
+  </div>
+  <!-- Modal -->
+  <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+      <h3 id="myModalLabel">Co aesoft nabízí?</h3>
+    </div>
+    <div class="modal-body">
+      <h4>Hlavní cíl</h4>
+      <p>Framework rails předpokládá velkou komunitu a díky tomu, že celosvětová komunita rails programátorů je již velmi rozsáhlá,
+        těší se Ruby on Rails takové oblibě. </p><p> Bohužel na české půdě je to o poznání horší, proto vznikl projekt aesoft, který
+      si dal nelehký, ale velmi důležitý úkol. Podpořit programátory, kteří se zajímají, nebo již programují v technologii Ruby on Rails.
+      Aesoft se bude mnoha kroky podílet na šíření rails do českého povědomí.</p> <p> Klienti by měli vědět, že mají možnost volby. Volbu,
+      která technologie bude nosným lešením pro jejich webové aplikace!</p>
+      <hr>
+
+      <h4>Proč by mě měl projekt zajímat?</h4>
+
+      <div class="accordion" id="accordion2">
+        <div class="accordion-group">
+          <div class="accordion-heading">
+            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+              Programuji webové aplikace
+            </a>
+          </div>
+          <div id="collapseOne" class="accordion-body collapse in">
+            <div class="accordion-inner">
+              Vše co nám budete ochotni poskytnout ve vašem osobním profilu (vzdělání, dovednosti, zkušenosti, ..)
+              bude použito při navazování spolupráce s vámi. Rovněž dostanete možnost podílet se na samotném vývoji projektu aesoft<hr>
+              Aesoft bude nabízet databázi: <br>
+              -RAILS programátorů<br>
+              -HTML a CSS kodérů<br>
+              -WEB designerů<br>
+              -Databázových specialistů<br>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-group">
+          <div class="accordion-heading">
+            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+              Zajímá mě Ruby & Ruby on Rails
+            </a>
+          </div>
+          <div id="collapseTwo" class="accordion-body collapse">
+            <div class="accordion-inner">
+              Aesoft vás bude zásobovat hromadou novinek ze světa Ruby & Ruby on Rails. Též pro vás bude připravovat výukové kurzy
+
+            </div>
+          </div>
+        </div>
+        <div class="accordion-group">
+          <div class="accordion-heading">
+            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">
+              Collapsible Group Item #3
+            </a>
+          </div>
+          <div id="collapseThree" class="accordion-body collapse">
+            <div class="accordion-inner">
+              ...
+            </div>
+          </div>
+        </div>
+      </div>
+
+      </div>
+    <div class="modal-footer">
+      <button class="btn" data-dismiss="modal">Close</button>
+    </div>
+  </div>
+
+  <div class="footer align-center">
+        <span class="copyright transparent lighting-border rounded-corner">
+          &copy; 2013 aesoft. Všechna práva vyhrazena.
+        </span>
+        <span class="social transparent lighting-border rounded-corner">
+          <a href="#"><i class="icon-facebook"></i></a>
+          <a href="#"><i class="icon-twitter"></i></a>
+        </span>
+  </div>
+</div>
+
+</body>
+</html>

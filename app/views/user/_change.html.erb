@@ -1,0 +1,11 @@
+<% if @state == true %>
+    <div class="input-append">
+      <input type="email" name="email" class="subscribe-box" placeholder="Děkujeme" disabled>
+      <button type="submit" class="btn btn-success subscribe-btn" disabled>Hotovo</button>
+    </div>
+<% else %>
+    <div class="input-append has-error">
+      <input type="email" name="email" class="subscribe-box" placeholder="Email se nepodařilo uložit">
+      <button type="submit" class="btn btn-danger subscribe-btn">Znovu</button>
+    </div>
+<%end%>
