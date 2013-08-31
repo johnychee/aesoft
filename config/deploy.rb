@@ -1,9 +1,8 @@
 require 'bundler/capistrano'
 
 set :application, "aesoft"
-set :scm, :none
-set :repository, "."
-set :deploy_via, :copy
+set :repository, "git@github.com:johnychee/aesoft.git"
+set :scm, "git"
 
 role :web, "server5.railshosting.cz"
 role :app, "server5.railshosting.cz"
